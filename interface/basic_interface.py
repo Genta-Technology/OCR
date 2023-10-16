@@ -20,7 +20,7 @@ def select_pdf_interface(pdf_names):
     for i in range(len(pdf_names)):
         print(str(i+1) + ". " + pdf_names[i])
         i += 1
-    print("please select one that you would like to convert")
+    print("\n please select one that you would like to convert")
     select = int(input("Please input the file number: "))
     select -= 1
     if select > len(pdf_names):
@@ -28,7 +28,7 @@ def select_pdf_interface(pdf_names):
         line()
         select = select_pdf_interface(pdf_names)
     else:
-        print("You select: " + pdf_names[select])
+        print("You select: " + pdf_names[select] + "\n")
     return select
 
 def progress_user_interface(progress, total):
