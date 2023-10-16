@@ -129,8 +129,10 @@ def clean_text(input_string):
     Return:
         text (String)
     """
-    modified_string = input_string.replace('//(', '$').replace('//)', '$')
-    return modified_string
+    # modified_string = input_string.replace('//(', '$').replace('//)', '$')
+    # return modified_string
+
+    return input_string
 
 def save_file(input_string, folder_path, file_name):
     """
